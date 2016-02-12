@@ -1,5 +1,6 @@
 ﻿using FlapiUnity;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 /// <summary>
@@ -7,8 +8,11 @@ using System.Collections;
 /// </summary>
 public class MenuController : MonoBehaviour
 {
-	/// <summary>The game state.</summary>
-	private GameState state = GameState.LOGO;
+
+
+    private Text introText;
+    /// <summary>The game state.</summary>
+    private GameState state = GameState.LOGO;
 	/// <summary>The logo animator.</summary>
 	public Animator logoAnimator;
 	/// <summary>The play animator.</summary>
@@ -20,13 +24,30 @@ public class MenuController : MonoBehaviour
     /// <summary>The setup button animator.</summary>
     public Animator backAnimator;
 
+
+
     /// <summary>
     /// Called when the play button is cliqued. Show the correct view (intro, then the game).
     /// </summary>
     /// 
     public void Start()
     {
+        //manage player last connexion and show a message accordingly
         PlayerProfileData.profileData.Load();
+        PlayerProfileData profileDataObj = PlayerProfileData.profileData;
+        introText = FindObjectOfType<Text>();
+
+
+        var difference = System.DateTime.Now.Subtract(profileDataObj.lastConnectionDate).TotalDays;
+
+
+        if (difference>2)
+        {
+            introText.text= "Content de te revoir !\r\nTu nous as manqué !";
+        } 
+
+        profileDataObj.lastConnectionDate = System.DateTime.Now;
+        PlayerProfileData.profileData.Save();
     }
 
     public void PlayClicked ()
