@@ -1,5 +1,6 @@
 ﻿using FlapiUnity;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 /// <summary>
@@ -7,9 +8,9 @@ using System.Collections;
 /// </summary>
 public class MenuController : MonoBehaviour
 {
-	private PlayerProfileData profileDataObj = PlayerProfileData.profileData;
-	/// <summary>The game state.</summary>
-	private GameState state = GameState.LOGO;
+    private Text introText;
+    /// <summary>The game state.</summary>
+    private GameState state = GameState.LOGO;
 	/// <summary>The logo animator.</summary>
 	public Animator logoAnimator;
 	/// <summary>The play animator.</summary>
@@ -21,13 +22,30 @@ public class MenuController : MonoBehaviour
     /// <summary>The setup button animator.</summary>
     public Animator backAnimator;
 
+
+
     /// <summary>
     /// Called when the play button is cliqued. Show the correct view (intro, then the game).
     /// </summary>
     /// 
     public void Start()
     {
+        //manage player last connexion and show a message accordingly
         PlayerProfileData.profileData.Load();
+        PlayerProfileData profileDataObj = PlayerProfileData.profileData;
+        introText = FindObjectOfType<Text>();
+
+
+        var difference = System.DateTime.Now.Subtract(profileDataObj.lastConnectionDate).TotalDays;
+
+
+        if (difference>2)
+        {
+            introText.text= "Content de te revoir !\r\nTu nous as manqué !";
+        } 
+
+        profileDataObj.lastConnectionDate = System.DateTime.Now;
+        PlayerProfileData.profileData.Save();
     }
 
     public void PlayClicked ()
@@ -48,120 +66,6 @@ public class MenuController : MonoBehaviour
         PlayerProfileData.profileData.Save();
         Application.LoadLevel("Menu");
     }
-
-	// Add or remove one value in the parameters
-	//nb Breathing High
-	public void nbBreathingsHighDecClicked()
-	{
-		profileDataObj.nbBreathingsHigh -= 1;
-
-		if(profileDataObj.nbBreathingsHigh < 0){
-			profileDataObj.nbBreathingsHigh = 0;
-		}
-	}
-
-	public void nbBreathingsHighIncClicked()
-	{
-		profileDataObj.nbBreathingsHigh += 1;
-
-		if(profileDataObj.nbBreathingsHigh > 15){
-			profileDataObj.nbBreathingsHigh = 15;
-		}
-
-	}
-
-	//nbBreathingsMedium
-	public void nbBreathingsMediumDecClicked()
-	{
-		profileDataObj.nbBreathingsMedium -= 1;
-
-		if(profileDataObj.nbBreathingsMedium < 0){
-			profileDataObj.nbBreathingsMedium = 0;
-		}
-	}
-
-	public void nbBreathingsMediumIncClicked()
-	{
-		profileDataObj.nbBreathingsMedium += 1;
-
-		if(profileDataObj.nbBreathingsMedium > 15){
-			profileDataObj.nbBreathingsMedium = 15;
-		}
-	}
-
-	//nbBreathingsLow
-	public void nbBreathingsLowDecClicked()
-	{
-		profileDataObj.nbBreathingsLow -= 1;
-
-		if(profileDataObj.nbBreathingsLow < 0){
-			profileDataObj.nbBreathingsLow = 0;
-		}
-	}
-
-	public void nbBreathingsLowIncClicked()
-	{
-		profileDataObj.nbBreathingsLow += 1;
-
-		if(profileDataObj.nbBreathingsLow > 15){
-			profileDataObj.nbBreathingsLow = 15;
-		}
-	}
-
-	public void inspirationTimeDecClicked()
-	{
-		profileDataObj.inspirationTime -= .5f;
-
-		if(profileDataObj.inspirationTime < 0){
-			profileDataObj.inspirationTime = 0;
-		}
-	}
-
-	public void inspirationTimeIncClicked()
-	{
-		profileDataObj.inspirationTime += .5f;
-
-		if(profileDataObj.inspirationTime > 15){
-			profileDataObj.inspirationTime = 15;
-		}
-	}
-
-	public void holdingBreathTimeDecClicked()
-	{
-		profileDataObj.holdingBreathTime -= .5f;
-
-		if(profileDataObj.holdingBreathTime < 0){
-			profileDataObj.holdingBreathTime = 0;
-		}
-	}
-
-	public void holdingBreathTimeTimeIncClicked()
-	{
-		profileDataObj.holdingBreathTime += .5f;
-
-		if(profileDataObj.holdingBreathTime > 15){
-			profileDataObj.holdingBreathTime = 15;
-		}
-	}
-
-	public void expirationMinTimeTimeDecClicked()
-	{
-		profileDataObj.expirationMinTime -= .5f;
-
-		if(profileDataObj.expirationMinTime < 0){
-			profileDataObj.expirationMinTime = 0;
-		}
-	}
-
-	public void expirationMinTimeTimeIncClicked()
-	{
-		profileDataObj.expirationMinTime += .5f;
-
-		if(profileDataObj.expirationMinTime > 15){
-			profileDataObj.expirationMinTime = 15;
-		}
-	}
-		
 
     /// <summary>
     /// Shows the intro text (doing all the animations).

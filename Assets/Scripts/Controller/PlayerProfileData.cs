@@ -18,6 +18,8 @@ public class PlayerProfileData : MonoBehaviour {
     public float expirationMinTime=10.0f;
     public float volumeRange=0.5f;
 
+    public DateTime lastConnectionDate;
+
     // Use this for initialization
     void Awake ()
     {
@@ -47,6 +49,7 @@ public class PlayerProfileData : MonoBehaviour {
         data.holdingBreathTime = holdingBreathTime;
         data.expirationMinTime = expirationMinTime;
         data.volumeRange = volumeRange;
+        data.lastConnectionDate = lastConnectionDate;
 
         bf.Serialize(file, data);
         file.Close();
@@ -69,6 +72,7 @@ public class PlayerProfileData : MonoBehaviour {
             holdingBreathTime = data.holdingBreathTime;
             expirationMinTime = data.expirationMinTime;
             volumeRange = data.volumeRange;
+            lastConnectionDate = data.lastConnectionDate;
         }
     }
 }
@@ -83,4 +87,6 @@ class PlayerData
     public float holdingBreathTime;
     public float expirationMinTime;
     public float volumeRange;
+
+    public DateTime lastConnectionDate;
 }
