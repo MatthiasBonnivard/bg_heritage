@@ -54,63 +54,112 @@ public class MenuController : MonoBehaviour
 	public void nbBreathingsHighDecClicked()
 	{
 		profileDataObj.nbBreathingsHigh -= 1;
+
+		if(profileDataObj.nbBreathingsHigh < 0){
+			profileDataObj.nbBreathingsHigh = 0;
+		}
 	}
 
 	public void nbBreathingsHighIncClicked()
 	{
 		profileDataObj.nbBreathingsHigh += 1;
+
+		if(profileDataObj.nbBreathingsHigh > 15){
+			profileDataObj.nbBreathingsHigh = 15;
+		}
+
 	}
 
 	//nbBreathingsMedium
 	public void nbBreathingsMediumDecClicked()
 	{
 		profileDataObj.nbBreathingsMedium -= 1;
+
+		if(profileDataObj.nbBreathingsMedium < 0){
+			profileDataObj.nbBreathingsMedium = 0;
+		}
 	}
 
 	public void nbBreathingsMediumIncClicked()
 	{
 		profileDataObj.nbBreathingsMedium += 1;
+
+		if(profileDataObj.nbBreathingsMedium > 15){
+			profileDataObj.nbBreathingsMedium = 15;
+		}
 	}
 
 	//nbBreathingsLow
 	public void nbBreathingsLowDecClicked()
 	{
 		profileDataObj.nbBreathingsLow -= 1;
+
+		if(profileDataObj.nbBreathingsLow < 0){
+			profileDataObj.nbBreathingsLow = 0;
+		}
 	}
 
 	public void nbBreathingsLowIncClicked()
 	{
 		profileDataObj.nbBreathingsLow += 1;
+
+		if(profileDataObj.nbBreathingsLow > 15){
+			profileDataObj.nbBreathingsLow = 15;
+		}
 	}
 
 	public void inspirationTimeDecClicked()
 	{
 		profileDataObj.inspirationTime -= .5f;
+
+		if(profileDataObj.inspirationTime < 0){
+			profileDataObj.inspirationTime = 0;
+		}
 	}
 
 	public void inspirationTimeIncClicked()
 	{
 		profileDataObj.inspirationTime += .5f;
+
+		if(profileDataObj.inspirationTime > 15){
+			profileDataObj.inspirationTime = 15;
+		}
 	}
 
 	public void holdingBreathTimeDecClicked()
 	{
 		profileDataObj.holdingBreathTime -= .5f;
+
+		if(profileDataObj.holdingBreathTime < 0){
+			profileDataObj.holdingBreathTime = 0;
+		}
 	}
 
 	public void holdingBreathTimeTimeIncClicked()
 	{
 		profileDataObj.holdingBreathTime += .5f;
+
+		if(profileDataObj.holdingBreathTime > 15){
+			profileDataObj.holdingBreathTime = 15;
+		}
 	}
 
 	public void expirationMinTimeTimeDecClicked()
 	{
 		profileDataObj.expirationMinTime -= .5f;
+
+		if(profileDataObj.expirationMinTime < 0){
+			profileDataObj.expirationMinTime = 0;
+		}
 	}
 
 	public void expirationMinTimeTimeIncClicked()
 	{
 		profileDataObj.expirationMinTime += .5f;
+
+		if(profileDataObj.expirationMinTime > 15){
+			profileDataObj.expirationMinTime = 15;
+		}
 	}
 		
 
