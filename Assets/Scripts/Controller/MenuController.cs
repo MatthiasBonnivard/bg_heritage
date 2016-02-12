@@ -8,8 +8,6 @@ using System.Collections;
 /// </summary>
 public class MenuController : MonoBehaviour
 {
-
-
     private Text introText;
     /// <summary>The game state.</summary>
     private GameState state = GameState.LOGO;
