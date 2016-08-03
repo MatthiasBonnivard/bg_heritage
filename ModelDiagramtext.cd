@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bezier" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Curves\Bezier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BezierCurve" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIACAAAAIBAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Curves\BezierCurve.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BezierSpline" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAIACIAAAIDAAAAiAAAAAYYAEIAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Curves\BezierSpline.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Line" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Curves\Line.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SplineDecorator" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAgAAAAAAABAAACAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Model\Curves\SplineDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SplineWalker" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAoAAAAAAACAAAAAAAAAAABAAAAgAIAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Curves\SplineWalker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Breathing" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIAEAAAVAGQAHQAACIEAQAAAQBAAIEAGICBAhiACA=</HashCode>
+      <FileName>Assets\Scripts\Model\Exercice\Breathing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DecreasingAutogenicDrainage" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Exercice\DecreasingAutogenicDrainage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exercice" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAEAAYBAACCAAAAAAAQCAAAAAABBAAAAEIABMACAAQ=</HashCode>
+      <FileName>Assets\Scripts\Model\Exercice\Exercice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlapiInputController" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAABAAAAAAAAAAAAABAAAAAAEAAAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Input\FlapiInputController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KeyboardInputController" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAABAAAAAAAAAAgAAEAAAAAAEAAAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Input\KeyboardInputController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KeyboardSimpleInputController" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAABAhAAEAQAAAAEAAAABABAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Input\KeyboardSimpleInputController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OnlyExpirationInputController" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAABEAAAABAABABQAAAQAAAAEEAAABBBAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Input\OnlyExpirationInputController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PepInputController" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABgAAgAAAAEAAABABAAAAQAABAEACAABABAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Input\PepInputController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Obstacle" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAACAAAAAAAAAAAAAAAAQAAAAEAAAAAAQAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Obstacle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="InputController_I" Collapsed="true">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAABABAAAAAAAAAEAAAABABAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Input\InputController_I.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="BezierControlPointMode" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Model\Curves\BezierControlPointMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SplineWalkerMode" Collapsed="true">
+    <Position X="10.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Curves\SplineWalkerMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BreathingState" Collapsed="true">
+    <Position X="7" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Exercice\BreathingState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Transition" Collapsed="true">
+    <Position X="5.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAABAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Exercice\Transition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ObstacleType" Collapsed="true">
+    <Position X="8.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAICAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Assets\Scripts\Model\Obstacle.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

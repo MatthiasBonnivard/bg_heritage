@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BigStarController" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABACAIAAAEAAAAAAAAAAAEBAEAAAAAIAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\BigStarController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BonusStarController" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQBAACAAABgAAAAAAAAAAAAAAwEAAABAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\BonusStarController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BonusStarsController" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAABAAAAACAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\BonusStarsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Breathe" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAAACAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\Breathe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalibrationController" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAAAIgKCAIAAAAAAAAAAAAAAAAACMAQBCBICCAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\CalibrationController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DetroyOnLeftScreenBorderController" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\DetroyOnLeftScreenBorderController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EndCanvasController" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQaAAAAAACEAEAAAAAAAAAAAAAAABCAMAAABAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\EndCanvasController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EndCycleController" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\EndCycleController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeneratedLevelController" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAIQgAQBACABAAAAgAAAgIIIAARAAAgAgAEAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\GeneratedLevelController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelController" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAACAAAABgAAAAQAAAACAAAIFQAACgIAAIAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\LevelController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuController" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIIAEBGIAAACABQAEQAAgEAEACAAEAQABAIGgAKA=</HashCode>
+      <FileName>Assets\Scripts\Controller\MenuController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PathController" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAAAAACAAAAAAAAAAAACAAABgAAAIAABAAAAAACA=</HashCode>
+      <FileName>Assets\Scripts\Controller\PathController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerController" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAyQAAAAAIAEAAAAIAAAAARAAEAIEAgIAAAAAAACAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\PlayerController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerProfileData" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEgIAAgAIAAAAQAAAAAAAAAEEAAAAAAgCAAAAAAGA=</HashCode>
+      <FileName>Assets\Scripts\Controller\PlayerProfileData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerData" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAgAIAAAAQAAAAAAAAAEEAAAAAAgAAAAAAACA=</HashCode>
+      <FileName>Assets\Scripts\Controller\PlayerProfileData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarController" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAgAAAAAAAAAAQAAEAAAAAMAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\StarController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimeController" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAABCAAAAAAAAAAAAAIAAAAAAAIAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\TimeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="HSBColor" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAEAAAAAAAEAAAAAAAgwYAACAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\HSBColor.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="CalibrationState" Collapsed="true">
+    <Position X="3" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAEAAIAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\CalibrationState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EndCanvasState" Collapsed="true">
+    <Position X="4.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAEACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\EndCanvasState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="GameState" Collapsed="true">
+    <Position X="6.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAEgAAAAAAAYAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controller\GameState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
